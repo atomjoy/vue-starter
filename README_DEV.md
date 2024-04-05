@@ -13,6 +13,7 @@ npm install
 npm install axios
 npm install vue@latest
 npm install --save-dev @vitejs/plugin-vue
+npm install vue-router@4
 ```
 
 ### Kompilacja
@@ -60,15 +61,19 @@ php artisan migrate:fresh --env=testing
 php artisan storage:link
 ```
 
-### Tłumaczenia
-
-```sh
-php artisan lang:publish
-```
-
 ### Uruchom
 
 ```sh
 php artisan serve
 php artisan serve --host=localhost --port=8000
+```
+
+### Inne opcje
+
+```sh
+# Tłumaczenia
+php artisan lang:publish
+
+# Strony błędów
+php artisan vendor:publish --tag=laravel-errors
 ```

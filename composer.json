@@ -1,5 +1,5 @@
 {    
-    "version": "1.0",
+    "version": "2.0",
     "name": "laravel/laravel",
     "type": "project",
     "description": "The skeleton application for the Laravel framework.",

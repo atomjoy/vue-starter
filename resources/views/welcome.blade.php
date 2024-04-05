@@ -3,11 +3,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Laravel Vue Starter</title>
+    <title>Laravel Vue Starter Router</title>
 
     <meta name="description" content="Laravel 11 Vue 3.4 app starter with Vite.">
 	<meta name="keywords" content="laravel, vue, starter">
-	<link rel="canonical" href="https://laravel.vue" />
+	<link rel="canonical" href="/" />
 
 	<!-- Css, links -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />

@@ -1,4 +1,4 @@
-# Laravel 11 vue 3.4 Starter
+# Laravel 11 vue 3.4 Starter Router
 
 Pobierz repozytorium z githuba rozpakuj i przejdż do katalogu.
 
