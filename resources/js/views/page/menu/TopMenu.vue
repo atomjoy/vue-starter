@@ -6,7 +6,7 @@ import ChangeTheme from '@/components/utils/ChangeTheme/ChangeTheme.vue'
 
 <template>
     <nav class="nav-router">
-        <img src="/logo/logo-light.png" alt="Logo" title="Logo" class="nav-router__logo">
+        <a href="/" class="nav-router__logo-link"><img src="/logo/logo-light.png" alt="Logo" title="Logo" class="nav-router__logo"></a>
         <RouterLink to="/" class="nav-router__link" :title="$t('Home')">{{ $t('Home') }}</RouterLink>
         <RouterLink to="/services" class="nav-router__link" :title="$t('Services')">{{ $t('Services') }}</RouterLink>
         <RouterLink to="/about" class="nav-router__link" :title="$t('About')">{{ $t('About') }}</RouterLink>

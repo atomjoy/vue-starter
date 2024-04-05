@@ -161,6 +161,10 @@ iframe {
     border-bottom: 2px solid var(--accent-primary);
 }
 
+.nav-router__logo-link {
+	float: left;
+}
+
 .nav-router__logo {
     float: left;
     height: 45px;    
