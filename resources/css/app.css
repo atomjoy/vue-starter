@@ -1,17 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 :root {
 	--font-family: 'Poppins', Arial, Helvetica, sans-serif;
 	--font-family-text: 'Open Sans', Arial, Helvetica, sans-serif;
 	--font-size: 16px;
 	--border-radius: 10px;
+	--scrollbar-bg: #FF9557;
+	--scrollbar-thumb: #e6e6e6;
 }
 
 :root {	
     color-scheme: light;
 	--bg-primary: #fff;	
-	--text-primary: #272848;
+	--text-primary: #232629;
     --accent-primary: #FF9557; /* #0249fe; */
     --placeholder: #717171;
     --logo: url('/logo/logo-light.png');
@@ -33,7 +35,7 @@
 [color-scheme='light'] {
     color-scheme: light;
 	--bg-primary: #fff;	
-	--text-primary: #272848;
+	--text-primary: #212329;
     --accent-primary: #FF9557; /* #0249fe; */
     --placeholder: #717171;
 	--logo: url('/logo/logo-light.png');
@@ -41,26 +43,35 @@
 
 [color-scheme='dark'] {
     color-scheme: dark;
-    --bg-primary: #212529; /* #1E1E1E; #212529; */
-    --text-primary: #fff;
-    --accent-primary: #FF9557; /* #0249FE; */
-    --placeholder: #717171;
-    --logo: url('/logo/logo-dark.png');
+	--bg-primary: #212529; /* #1E1E1E; #212529; */
+	--text-primary: #fff;
+	--accent-primary: #FF9557; /* #0249FE; */
+	--placeholder: #717171;
+	--logo: url('/logo/logo-dark.png');
 }
 
-html, body {    
-    font-size: var(--font-size);
+html {
+	display: block;
+	font-size: var(--font-size);
 	font-family: var(--font-family);
 	background: var(--bg-primary);
 	margin: 0;
-	padding: 0px;	    
+	padding: 0px;
+	height: 100vh;
+	overflow-y: scroll;	
 }
 
 body {
-    overflow-y: scroll;
+	display: block;
+	overflow: hidden;
+	margin: 0;
+	padding: 0px;	
+	color: var(--text-primary);
 	background: var(--bg-primary);
-    color: var(--text-primary);
+	transition: color 0.5s, background-color 0.5s;
+	position: relative;	
 }
+
 
 p {
     font-family: var(--font-family-text);
@@ -98,19 +109,18 @@ iframe {
 	color: #fff;
 }
 
-.scrollbar-thin {
-	overflow-y: scroll;
+.scrollbar-thin {	
 	scrollbar-width: thin;
-	scrollbar-color: #fff #aaa;
+	scrollbar-color: var(--scrollbar-bg) var(--scrollbar-thumb);
 }
 
 .scrollbar-thin::-webkit-scrollbar {
 	width: 8px;
-	background: #aaa;
+	background: var(--scrollbar-bg);
 }
 
-.scrollbar-thin::-webkit-scrollbar-thumb {
-	background: #fff;
+.scrollbar-thin::-webkit-scrollbar-thumb {	
+	background: var(--scrollbar-thumb);
 }
 
 #app, .section {

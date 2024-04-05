@@ -14,6 +14,9 @@ npm install axios
 npm install vue@latest
 npm install --save-dev @vitejs/plugin-vue
 npm install vue-router@4
+npm install pinia
+npm install vue-i18n@9
+npm install @googlemaps/js-api-loader
 ```
 
 ### Kompilacja

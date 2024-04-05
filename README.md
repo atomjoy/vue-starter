@@ -1,11 +1,12 @@
-# Laravel 11 vue 3.4 Starter Router
+# Laravel 11 Vue 3.4 Starter SPA
 
 Pobierz repozytorium z githuba rozpakuj i przejdż do katalogu.
 
 ## Wersje
 
 - v1.0 Starter - single page
-- v2.0 Starter Router - single page with sub-pages
+- v2.0 Starter Router - single page with sub-pages, router, fontawesome.css, animate.css
+- v3.0 Starter SPA - single page with sub-pages, router, stores, locales, themes, fontawesome.css, animate.css
 
 ## Vue
 

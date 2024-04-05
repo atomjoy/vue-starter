@@ -28,11 +28,11 @@ const router = createRouter({
 		// 	meta: { requiresAuth: true },
 		// },
 		// Enable vue-router fallback without 404 error code
-		// {
-		// 	path: '/:catchAll(.*)',
-		// 	name: 'error.404',
-		// 	component: () => import('../views/error/404.vue'),
-		// },
+		{
+			path: '/:catchAll(.*)',
+			name: 'error.404',
+			component: () => import('../views/error/404.vue'),
+		},
 	],
     scrollBehavior(to, from, savedPosition) {
 		// always scroll to top

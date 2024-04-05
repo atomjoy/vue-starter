@@ -5,7 +5,7 @@ import TopMenu from './menu/TopMenu.vue'
 <template>
     <TopMenu/>
     <div class="section">
-        <h1>Laravel Vue Starter Router</h1>
-        <p>Laravel 11 Vue 3.4 app starter withVueRouter and Vite.</p>
+        <h1 class="animate__animated animate__flipInX"><i class="fa-brands fa-vuejs"></i> Laravel Vue Starter SPA</h1>
+        <p>{{ $t('Laravel 11 Vue 3.4 Starter SPA with router.') }}</p>
     </div>
 </template>

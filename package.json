@@ -12,7 +12,10 @@
         "vite": "^5.0"
     },
     "dependencies": {
+        "@googlemaps/js-api-loader": "^1.16.6",
+        "pinia": "^2.1.7",
         "vue": "^3.4.21",
+        "vue-i18n": "^9.11.0",
         "vue-router": "^4.3.0"
     }
 }

@@ -18,7 +18,7 @@ Route::get('/about', function () {
 // Fallback route
 Route::fallback(function() {
     // Enable vue-router fallback without 404 error code
-    // return view('welcome');
+    return view('welcome');
 
     // Error page 404 code
     return abort(404);   
