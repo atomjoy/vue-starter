@@ -2,6 +2,11 @@
 
 Pobierz repozytorium z githuba rozpakuj i przejdż do katalogu.
 
+## Wersje
+
+- v1.0 Starter - single page
+- v2.0 Starter Router - single page with sub-pages
+
 ## Vue
 
 Zainstaluj node.js
