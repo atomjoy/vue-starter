@@ -1,6 +1,13 @@
 <script setup>
 import TopMenu from '@/views/page/menu/TopMenu.vue'
 import ChangeTitle from '@/components/utils/ChangeTitle/ChangeTitle.vue'
+
+function go1() {
+	window.location.href='/'
+}
+function go2() {
+	window.location.href='/about'
+}
 </script>
 
 <template>
@@ -9,10 +16,21 @@ import ChangeTitle from '@/components/utils/ChangeTitle/ChangeTitle.vue'
 
 	<h1>404</h1>
 	<h2>{{ $t('error404.title') }}</h2>
+
+	<div class="text-center">
+		<button id="home-btn" class="btn btn-secondary my-0 mx-2" @click="go1">Home</button>
+		<button id="contact-btn" class="btn btn-primary my-0 mx-2" @click="go2">About</button>
+	</div>
 </template>
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+
+.text-center {
+	display: block;
+	height: auto;
+	text-align: center;
+}
 
 h1 {
 	float: left;

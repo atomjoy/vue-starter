@@ -95,6 +95,7 @@ iframe {
 
 ::before,
 ::after {
+	box-sizing: border-box;
 	content: none;
 }
 
