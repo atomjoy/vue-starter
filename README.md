@@ -7,6 +7,7 @@ Pobierz repozytorium z githuba rozpakuj i przejdż do katalogu.
 - v1.0 Starter - single page
 - v2.0 Starter Router - single page with sub-pages, router, fontawesome.css, animate.css
 - v3.0 Starter SPA - single page with sub-pages, router, stores, locales, themes, fontawesome.css, animate.css
+- v4.0 Starter SPA - single page with sub-pages, router, stores, locales, themes, fontawesome.css, animate.css, custom inputs
 
 ## Vue
 
