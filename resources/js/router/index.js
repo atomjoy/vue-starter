@@ -21,6 +21,11 @@ const router = createRouter({
 			name: 'services',
 			component: () => import('../views/page/ServicesView.vue'),
 		},
+		{
+			path: '/demo/input',
+			name: 'demo.input',
+			component: () => import('@/components/input/example/DemoPageView.vue'),
+		},
 		// {
 		// 	path: '/panel',
 		// 	name: 'panel',

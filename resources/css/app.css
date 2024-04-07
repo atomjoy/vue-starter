@@ -124,7 +124,7 @@ iframe {
 	background: var(--scrollbar-thumb);
 }
 
-#app, .section {
+#app {
 	float: left;
 	width: 100%;
 	position: relative;
