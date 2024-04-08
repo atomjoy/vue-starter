@@ -1,13 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
 
 :root {
 	--font-family: 'Poppins', Arial, Helvetica, sans-serif;
 	--font-family-text: 'Open Sans', Arial, Helvetica, sans-serif;
+	--font-family-code: 'Fira Code', monospace, consolas;
 	--font-size: 16px;
 	--border-radius: 10px;
 	--scrollbar-bg: #FF9557;
 	--scrollbar-thumb: #e6e6e6;
+	--code-font-size: 14px;
+	--code-border: #00339911;
+	--code-line-numbers: #6885ba;
+	--code-line-border: #ff2233aa;
+	--code-line-underline: #00339911;
 }
 
 :root {	
@@ -27,6 +34,7 @@
         --text-primary: #fff;
         --accent-primary: #FF9557; /* #0249FE; */
         --placeholder: #717171;
+		--code-border: #717171;
         --logo: url('/logo/logo-dark.png');
     }
 }
@@ -47,6 +55,7 @@
 	--text-primary: #fff;
 	--accent-primary: #FF9557; /* #0249FE; */
 	--placeholder: #717171;
+	--code-border: #717171;
 	--logo: url('/logo/logo-dark.png');
 }
 
@@ -71,7 +80,6 @@ body {
 	transition: color 0.5s, background-color 0.5s;
 	position: relative;	
 }
-
 
 p {
     font-family: var(--font-family-text);

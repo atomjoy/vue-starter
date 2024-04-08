@@ -13,6 +13,7 @@
     },
     "dependencies": {
         "@googlemaps/js-api-loader": "^1.16.6",
+        "@highlightjs/vue-plugin": "^2.1.0",
         "pinia": "^2.1.7",
         "vue": "^3.4.21",
         "vue-i18n": "^9.11.0",

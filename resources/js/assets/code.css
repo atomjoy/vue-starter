@@ -1,0 +1,58 @@
+code {
+    font-size: var(--code-font-size);
+	font-family: var(--font-family-code);
+	border: 1px solid var(--code-border);		
+	padding: 20px !important;
+}
+
+pre {
+    margin: 20px 0px;
+}
+
+code, code.hljs {
+    padding: 10px !important;    
+    overflow: hidden !important;
+}
+
+/* for block of numbers */
+.hljs-ln {
+    float: left;
+    width: 100%;
+    font-size: var(--code-font-size);
+    font-family: 'JetBrains Mono', 'Fira Code', monospace, consolas;
+}
+
+.hljs-ln tbody {
+    float: left;
+    width: 100% !important;
+    border: 1px solid var(--code-border);
+}
+
+.hljs-ln tbody tr {
+    display: flex-table;
+    border-bottom: 1px solid var(--code-line-underline);
+}
+
+.hljs-ln-numbers {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+    color: var(--code-line-numbers);
+    border-right: 1px solid var(--code-line-border);
+    vertical-align: top;
+    padding: 5px 10px !important;
+
+    /* your custom style here */
+    /*min-width: 60px;*/
+}
+
+/* for block of code */
+.hljs-ln-code {
+    width: 100% !important;
+    padding-left: 10px !important;
+    line-height: 24px;
+}
