@@ -16,19 +16,18 @@
     <!-- Highligt.js -->	
 	<script src="https://unpkg.com/@highlightjs/cdn-assets@11.7.0/highlight.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/highlightjs-line-numbers.js/dist/highlightjs-line-numbers.min.js"></script>
-
-    @vite('resources/css/app.css')
-</head>
-<body>
-    <div id="app"></div>
-
-    @vite('resources/js/app.js')    
-
     <script type="text/javascript">		
         window.onload = (event) => {
             hljs.highlightAll();
 		    hljs.initLineNumbersOnLoad({ startFrom: 1 });
         }
     </script>
+
+    @vite('resources/css/app.css')
+</head>
+<body>
+    <div id="app"></div>
+
+    @vite('resources/js/app.js')
 </body>
 </html>
