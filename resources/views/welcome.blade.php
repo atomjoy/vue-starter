@@ -22,6 +22,7 @@
 		    hljs.initLineNumbersOnLoad({ startFrom: 1 });
         }
     </script>
+    <!-- Highligt.js -->
 
     @vite('resources/css/app.css')
 </head>
