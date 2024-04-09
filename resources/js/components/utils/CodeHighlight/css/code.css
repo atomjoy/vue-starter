@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+:root {
+	/* code highlighterjs */
+	--code-font-family: 'JetBrains Mono', monospace, consolas;
+	--code-font-size: 14px;
+	--code-border: #00339922;
+	--code-line-numbers: #6885ba;
+	--code-line-border: #ff2233aa;
+	--code-line-underline: #00339922;
+	--code-filename: var(--accent-primary); /* #d73a49;  #d30040; */
+}
+
+pre {
+	margin: 20px 0px;
+}
+
+code,
+code.hljs {
+	font-size: var(--code-font-size);
+	font-family: var(--code-font-family);
+	border: 1px solid var(--code-border);
+	border-radius: var(--border-radius);
+	padding: 10px !important;
+	overflow-y: hidden !important;
+	overflow-x: auto !important;
+}
+
+/* for block of numbers */
+.hljs-ln {
+	float: left;
+	width: 100%;
+	font-size: var(--code-font-size);
+	font-family: var(--code-font-family);
+}
+
+.hljs-ln tbody {
+	float: left;
+	width: 100% !important;
+	border: 1px solid var(--code-border);
+}
+
+.hljs-ln tbody tr {
+	display: flex-table;
+	border-bottom: 1px solid var(--code-line-underline);
+}
+
+.hljs-ln-numbers {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	text-align: center;
+	color: var(--code-line-numbers);
+	border-right: 1px solid var(--code-line-border);
+	vertical-align: top;
+	padding: 5px 10px !important;
+
+	/* your custom style here */
+	/*min-width: 60px;*/
+}
+
+/* for block of code */
+.hljs-ln-code {
+	width: 100% !important;
+	padding-left: 10px !important;
+	line-height: 24px;
+}
+
+/* toggle theme button */
+.hljs-code-topbar {
+	float: left;
+	width: 100%;
+	padding: 5px;
+	margin: 20px auto 10px auto;
+	border-radius: var(--border-radius);
+	border: 1px solid var(--code-border);
+	background: transparent;
+	overflow: hidden;
+}
+
+.hljs-code-filename {
+	float: left;
+	padding: 10px 20px;
+	color: var(--code-filename);
+	font-family: var(--code-font-family);
+	font-weight: 700;
+}
+
+.hljs-code-toggle-theme {
+	float: right;
+	font-size: 14px;
+	padding: 10px 20px;
+	color: var(--placeholder);
+	border-radius: var(--border-radius);
+	border: 1px solid var(--code-border);
+	background: transparent;
+	cursor: pointer;
+}
+
+.hljs-code-toggle-theme:hover {
+	color: var(--accent-primary);
+	border: 1px solid var(--accent-primary);
+}

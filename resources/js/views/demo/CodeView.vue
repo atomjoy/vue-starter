@@ -1,5 +1,6 @@
 <script setup>
 import CodeHighlight from '@/components/utils/CodeHighlight/CodeHighlight.vue'
+import TopMenu from '@/views/page/menu/TopMenu.vue'
 
 const code = `<?php
 
@@ -52,8 +53,9 @@ class User extends Authenticatable
 </script>
 
 <template>
+	<TopMenu />
 	<div class="section">
 		<!-- <CodeHighlight lang="php" :code="code" theme="dark-theme" /> -->
-		<CodeHighlight lang="php" :code="code" />
+		<CodeHighlight lang="php" :code="code" filename="App\Models\User.php" />
 	</div>
 </template>

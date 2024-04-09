@@ -11,11 +11,11 @@ import 'highlight.js/styles/github.min.css'
 // import 'highlight.js/styles/mono-blue.min.css'
 
 // Dark set from current dir css
-import './css/hybrid-dark.css'
-// import './css/atom-one-dark.css'
-// import './css/an-old-hope-dark.css'
-// import './css/srcery-dark.css'
-// import './css/kimbie-dark.css'
+import './css/dark/hybrid-dark.css'
+// import './css/dark/atom-one-dark.css'
+// import './css/dark/an-old-hope-dark.css'
+// import './css/dark/srcery-dark.css'
+// import './css/dark/kimbie-dark.css'
 
 import hljs from 'highlight.js/lib/common'
 import hljsVuePlugin from '@highlightjs/vue-plugin'
@@ -24,6 +24,7 @@ const props = defineProps({
 	code: { default: '<?php echo "Insert code here...";' },
 	language: { type: String, default: 'php' },
 	theme: { type: String, default: '' },
+	filename: { type: String, default: '' },
 })
 
 const highlightjs = hljsVuePlugin.component
@@ -42,30 +43,14 @@ function toggleTheme() {
 </script>
 
 <template>
-	<div class="code-topbar">
-		<button class="toggle-code-theme" @click="toggleTheme">{{ $t('Change Theme') }}</button>
+	<div class="hljs-code-topbar">
+		<span class="hljs-code-filename">{{ props.filename }}</span>
+		<button v-if="theme == ''" class="hljs-code-toggle-theme" @click="toggleTheme"><i class="fa-solid fa-toggle-off"></i></button>
+		<button v-else class="hljs-code-toggle-theme" @click="toggleTheme"><i class="fa-solid fa-toggle-on"></i></button>
 	</div>
 	<highlightjs :class="theme" :code="props.code" :language="props.language" />
 </template>
 
 <style>
-.code-topbar {
-	display: block;
-	overflow: hidden;
-	margin: 10px auto;
-}
-.toggle-code-theme {
-	float: right;
-	font-size: 14px;
-	padding: 10px 20px;
-	color: var(--text-primary);
-	border-radius: var(--border-radius);
-	background: transparent;
-	border: 2px solid var(--code-border);
-	cursor: pointer;
-}
-.toggle-code-theme:hover {
-	color: var(--accent-primary);
-	border: 2px solid var(--accent-primary);
-}
+@import url('./css/code.css');
 </style>
