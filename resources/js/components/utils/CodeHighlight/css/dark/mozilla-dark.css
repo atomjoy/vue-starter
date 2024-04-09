@@ -1,0 +1,81 @@
+/*!
+  Theme: Mozilla
+  Description: Light theme as seen on Mozilla.com
+  Author: Mozilla.com
+
+  Current colors taken from Mozilla's CSS
+*/
+
+/* Millenium Falcon */
+.dark-theme .hljs {
+	color: #dcc200 !important;
+	background: #232629 !important;
+}
+
+/* Death Star Comment */
+.dark-theme .hljs-comment,
+.dark-theme .hljs-quote {
+	color: #6a737d !important;
+}
+
+/* Darth Vader */
+.dark-theme .hljs-variable,
+.dark-theme .hljs-template-variable,
+.dark-theme .hljs-tag,
+.dark-theme .hljs-name,
+.dark-theme .hljs-selector-id,
+.dark-theme .hljs-selector-class,
+.dark-theme .hljs-regexp,
+.dark-theme .hljs-deletion {
+	color: #0069c2 !important;
+}
+
+/* Threepio */
+.dark-theme .hljs-number,
+.dark-theme .hljs-built_in,
+.dark-theme .hljs-literal,
+.dark-theme .hljs-type,
+.dark-theme .hljs-params,
+.dark-theme .hljs-meta,
+.dark-theme .hljs-link {
+	color: #e7ce56;
+}
+
+/* Luke Skywalker */
+.dark-theme .hljs-attribute {
+	color: #ee7c2b;
+}
+
+/* Obi Wan Kenobi */
+.dark-theme .hljs-string,
+.dark-theme .hljs-regexp,
+.dark-theme .hljs-symbol,
+.dark-theme .hljs-bullet,
+.dark-theme .hljs-addition {
+	color: #d30038 !important;
+	background-image: none;
+}
+
+.hljs-doctag {
+	color: #ff6600 !important;
+}
+
+/* Yoda */
+.dark-theme .hljs-title,
+.dark-theme .hljs-section {
+	color: #007936 !important;
+}
+
+/* Mace Windu */
+.dark-theme .hljs-keyword,
+.dark-theme .hljs-selector-tag {
+	color: #0099ff !important;
+}
+
+.dark-theme .hljs-emphasis {
+	font-style: italic;
+}
+
+.dark-theme .hljs-strong {
+	font-weight: bold;
+}

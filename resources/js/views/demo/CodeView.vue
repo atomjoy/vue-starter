@@ -1,5 +1,6 @@
 <script setup>
 import CodeHighlight from '@/components/utils/CodeHighlight/CodeHighlight.vue'
+import CodeHighlightMini from '@/components/utils/CodeHighlight/CodeHighlightMini.vue'
 import TopMenu from '@/views/page/menu/TopMenu.vue'
 
 const code = `<?php
@@ -46,6 +47,7 @@ class User extends Authenticatable
         return [
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
+            'size' => '15px',
         ];
     }
 }
@@ -55,7 +57,8 @@ class User extends Authenticatable
 <template>
 	<TopMenu />
 	<div class="section">
-		<!-- <CodeHighlight lang="php" :code="code" theme="dark-theme" /> -->
 		<CodeHighlight lang="php" :code="code" filename="App\Models\User.php" />
+		<!-- <CodeHighlight lang="php" :code="code" theme="dark-theme" filename="App\Models\User.php" /> -->
+		<!-- <CodeHighlightMini lang="php" :code="code" /> -->
 	</div>
 </template>
