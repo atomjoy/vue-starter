@@ -1,5 +1,5 @@
 <script setup>
-import CodeHighlight from '@/components/utils/CodeHighlight/CodeHighlight.vue';
+import CodeHighlight from '@/components/utils/CodeHighlight/CodeHighlight.vue'
 
 const code = `<?php
 
@@ -49,11 +49,11 @@ class User extends Authenticatable
     }
 }
 `
-
 </script>
 
 <template>
-    <div class="section">
-        <CodeHighlight lang="php" :code="code"/>
-    </div>
+	<div class="section">
+		<!-- <CodeHighlight lang="php" :code="code" theme="dark-theme" /> -->
+		<CodeHighlight lang="php" :code="code" />
+	</div>
 </template>

@@ -1,0 +1,95 @@
+/*
+Theme: Srcery
+Description: Srcery dark color scheme for highlight.js
+Author: Chen Bin <chen.bin@gmail.com>
+Maintainer: @redguardtoo
+Website: https://srcery-colors.github.io/
+Date: 2021-04-13
+*/
+
+.dark-theme .hljs {
+	background: #1c1b19; /* Black */
+	color: #fce8c3; /* Bright White */
+}
+
+/* Bright White */
+.dark-theme .hljs-subst,
+.dark-theme .hljs-quote,
+.dark-theme .hljs-literal {
+	color: #fce8c3;
+}
+
+/* Bright Blue */
+.dark-theme .hljs-type,
+.dark-theme .hljs-symbol {
+	color: #68a8e4;
+}
+
+/* Red */
+.dark-theme .hljs-keyword,
+.dark-theme .hljs-deletion {
+	color: #ef2f27;
+}
+
+/* Yellow */
+.dark-theme .hljs-name,
+.dark-theme .hljs-function,
+.dark-theme .hljs-attribute,
+.dark-theme .hljs-selector-attr,
+.dark-theme .hljs-selector-id,
+.dark-theme .hljs-selector-class,
+.dark-theme .hljs-selector-pseudo,
+.dark-theme .hljs-section,
+.dark-theme .hljs-title {
+	color: #fbb829;
+}
+
+/* Cyan */
+.dark-theme .hljs-code,
+.dark-theme .hljs-variable,
+.dark-theme .hljs-property,
+.dark-theme .hljs-template-variable,
+.dark-theme .hljs-class {
+	color: #0aaeb3;
+}
+
+/* Bright Green */
+.dark-theme .hljs-string,
+.dark-theme .hljs-regexp,
+.dark-theme .hljs-symbol,
+.dark-theme .hljs-bullet,
+.dark-theme .hljs-doctag,
+.dark-theme .hljs-addition {
+	color: #98bc37;
+	background-image: none;
+}
+
+/* Bright Magenta */
+.dark-theme .hljs-built_in,
+.dark-theme .hljs-params {
+	color: #ff5c8f;
+}
+
+/* Blue */
+.dark-theme .hljs-template-tag,
+.dark-theme .hljs-selector-tag {
+	color: #2c78bf;
+}
+
+/* Bright Black */
+.dark-theme .hljs-link,
+.dark-theme .hljs-number,
+.dark-theme .hljs-comment,
+.dark-theme .hljs-meta {
+	color: #918175;
+}
+
+.dark-theme .hljs-emphasis {
+	font-style: italic;
+}
+
+.dark-theme .hljs-strong {
+	font-weight: bold;
+}
+
+/* @see https://github.com/srcery-colors/srcery-emacs for reference */

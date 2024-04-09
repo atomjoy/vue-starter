@@ -1,0 +1,80 @@
+/*!
+  Theme: An Old Hope – Star Wars Syntax
+  Author: (c) Gustavo Costa <gusbemacbe@gmail.com>
+  Maintainer: @gusbemacbe
+
+  Original theme - Ocean Dark Theme – by https://github.com/gavsiu
+  Based on Jesse Leite's Atom syntax theme 'An Old Hope'
+    https://github.com/JesseLeite/an-old-hope-syntax-atom
+*/
+
+/* Millenium Falcon */
+.dark-theme .hljs {
+	background: #1c1d21;
+	color: #c0c5ce;
+}
+
+/* Death Star Comment */
+.dark-theme .hljs-comment,
+.dark-theme .hljs-quote {
+	color: #b6b18b;
+}
+
+/* Darth Vader */
+.dark-theme .hljs-variable,
+.dark-theme .hljs-template-variable,
+.dark-theme .hljs-tag,
+.dark-theme .hljs-name,
+.dark-theme .hljs-selector-id,
+.dark-theme .hljs-selector-class,
+.dark-theme .hljs-regexp,
+.dark-theme .hljs-deletion {
+	color: #eb3c54;
+}
+
+/* Threepio */
+.dark-theme .hljs-number,
+.dark-theme .hljs-built_in,
+.dark-theme .hljs-literal,
+.dark-theme .hljs-type,
+.dark-theme .hljs-params,
+.dark-theme .hljs-meta,
+.dark-theme .hljs-link {
+	color: #e7ce56;
+}
+
+/* Luke Skywalker */
+.dark-theme .hljs-attribute {
+	color: #ee7c2b;
+}
+
+/* Obi Wan Kenobi */
+.dark-theme .hljs-string,
+.dark-theme .hljs-regexp,
+.dark-theme .hljs-symbol,
+.dark-theme .hljs-bullet,
+.dark-theme .hljs-doctag,
+.dark-theme .hljs-addition {
+	color: #4fb4d7;
+	background-image: none;
+}
+
+/* Yoda */
+.dark-theme .hljs-title,
+.dark-theme .hljs-section {
+	color: #78bb65;
+}
+
+/* Mace Windu */
+.dark-theme .hljs-keyword,
+.dark-theme .hljs-selector-tag {
+	color: #b45ea4;
+}
+
+.dark-theme .hljs-emphasis {
+	font-style: italic;
+}
+
+.dark-theme .hljs-strong {
+	font-weight: bold;
+}
