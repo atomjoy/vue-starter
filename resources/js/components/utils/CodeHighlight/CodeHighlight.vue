@@ -12,8 +12,9 @@ import 'highlight.js/styles/github.min.css'
 
 // Dark set from current dir css
 import './css/dark/hybrid-dark.css'
-// import './css/dark/atom-one-dark.css'
 // import './css/dark/an-old-hope-dark.css'
+// import './css/dark/atom-one-dark.css'
+// import './css/dark/atom-one-resonable-dark.css'
 // import './css/dark/srcery-dark.css'
 // import './css/dark/kimbie-dark.css'
 
@@ -44,7 +45,7 @@ function toggleTheme() {
 
 <template>
 	<div class="hljs-code-topbar">
-		<span class="hljs-code-filename">{{ props.filename }}</span>
+		<span class="hljs-code-filename"><i class="fa-regular fa-file-code"></i> {{ props.filename }}</span>
 		<button v-if="theme == ''" class="hljs-code-toggle-theme" @click="toggleTheme"><i class="fa-solid fa-toggle-off"></i></button>
 		<button v-else class="hljs-code-toggle-theme" @click="toggleTheme"><i class="fa-solid fa-toggle-on"></i></button>
 	</div>

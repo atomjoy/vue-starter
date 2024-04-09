@@ -1,0 +1,111 @@
+pre code.hljs {
+	display: block;
+	overflow-x: auto;
+	padding: 1em;
+}
+code.hljs {
+	padding: 3px 5px;
+}
+/*
+
+  Atom One Dark With support for ReasonML by Gidi Morris, based off work by Daniel Gamage
+
+  Original One Dark Syntax theme from https://github.com/atom/one-dark-syntax
+
+  */
+.dark-theme .hljs {
+	color: #abb2bf;
+	background: #282c34;
+}
+.dark-theme .hljs-keyword,
+.dark-theme .hljs-operator {
+	color: #f92672;
+}
+.dark-theme .hljs-pattern-match {
+	color: #f92672;
+}
+.dark-theme .hljs-pattern-match .hljs-constructor {
+	color: #61aeee;
+}
+.dark-theme .hljs-function {
+	color: #61aeee;
+}
+.dark-theme .hljs-function .hljs-params {
+	color: #a6e22e;
+}
+.dark-theme .hljs-function .hljs-params .hljs-typing {
+	color: #fd971f;
+}
+.dark-theme .hljs-module-access .hljs-module {
+	color: #7e57c2;
+}
+.dark-theme .hljs-constructor {
+	color: #e2b93d;
+}
+.dark-theme .hljs-constructor .hljs-string {
+	color: #9ccc65;
+}
+.dark-theme .hljs-comment,
+.dark-theme .hljs-quote {
+	color: #b18eb1;
+	font-style: italic;
+}
+.dark-theme .hljs-doctag,
+.dark-theme .hljs-string,
+.dark-theme .hljs-regexp,
+.dark-theme .hljs-symbol,
+.dark-theme .hljs-bullet,
+.dark-theme .hljs-doctag,
+.dark-theme .hljs-formula {
+	color: #c678dd;
+	background-image: none;
+}
+.dark-theme .hljs-section,
+.dark-theme .hljs-name,
+.dark-theme .hljs-selector-tag,
+.dark-theme .hljs-deletion,
+.dark-theme .hljs-subst {
+	color: #e06c75;
+}
+.dark-theme .hljs-literal {
+	color: #56b6c2;
+}
+.dark-theme .hljs-string,
+.dark-theme .hljs-regexp,
+.dark-theme .hljs-addition,
+.dark-theme .hljs-attribute,
+.dark-theme .hljs-meta .hljs-string {
+	color: #98c379;
+}
+.dark-theme .hljs-built_in,
+.dark-theme .hljs-title.class_,
+.dark-theme .hljs-class .hljs-title {
+	color: #e6c07b;
+}
+.dark-theme .hljs-attr,
+.dark-theme .hljs-variable,
+.dark-theme .hljs-template-variable,
+.dark-theme .hljs-type,
+.dark-theme .hljs-selector-class,
+.dark-theme .hljs-selector-attr,
+.dark-theme .hljs-selector-pseudo,
+.dark-theme .hljs-number {
+	color: #d19a66;
+}
+.dark-theme .hljs-symbol,
+.dark-theme .hljs-bullet,
+.dark-theme .hljs-link,
+.dark-theme .hljs-meta,
+.dark-theme .hljs-selector-id,
+.dark-theme .hljs-title {
+	color: #61aeee;
+}
+.dark-theme .hljs-emphasis {
+	font-style: italic;
+}
+.dark-theme .hljs-strong {
+	font-weight: bold;
+}
+.dark-theme .hljs-link {
+	text-decoration: underline;
+}
