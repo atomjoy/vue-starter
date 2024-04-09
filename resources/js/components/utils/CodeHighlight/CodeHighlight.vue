@@ -11,7 +11,7 @@ import 'highlight.js/styles/default.css'
 // import 'highlight.js/styles/mono-blue.min.css'
 
 // Custom light
-import './css/mozilla-light.css'
+import './css/light/mozilla-light.css'
 
 // Dark set from current dir css
 import './css/dark/mozilla-dark.css'
