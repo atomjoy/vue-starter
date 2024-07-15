@@ -1,0 +1,30 @@
+# Shared hosting Laravel rewrite root to public directory
+
+# Php 8.2 Ovh
+# SetEnv PHP_VER 8_2
+# SetEnv REGISTER_GLOBALS 0
+
+# Php 8.2 Small.pl hosting
+AddType application/x-httpd-php82 .php
+
+DirectoryIndex index.php
+Options -Indexes -MultiViews +SymLinksIfOwnerMatch
+# Options -Indexes -MultiViews +FollowSymlinks
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteRule ^$ public/index.php [L]
+  RewriteRule ^((?!public/).*)$ public/$1 [L,NC]
+  RewriteRule (^\.|/\.) - [F]
+</IfModule>
+
+<Files .env>
+   order allow,deny
+   Deny from all
+</Files>
+
+<FilesMatch "^\.">
+  Order allow,deny
+  Deny from all
+</FilesMatch>
